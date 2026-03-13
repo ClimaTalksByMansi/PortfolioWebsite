@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Mansi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">Mansi</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">My Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobile dropdown — hidden by default, toggled by hamburger -->
+<!-- <div class="menu-dropdown" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="blog.html">My Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="projects.html">Projects</a>
+  <div class="menu-social-links"></div>
+</div> -->
+
+<main>
+  <section class="content-section pt-nav">
+    <div class="section-label reveal">Thoughts &amp; Writing</div>
+    <h1 class="section-title reveal reveal-delay-1">My Blog</h1>
+
+    <div class="card-grid" style="margin-top:48px;">
+
+      <!-- ── BLOG POST 01 ── -->
+      <div class="card reveal reveal-delay-1" onclick="goTo('blog-post.html#movie-night')">
+        <div class="card-img-wrap">
+          <!-- ✏️ Replace filename below with your actual image filename -->
+          <img class="card-img" src="images/d9f0da_23cda2c2a0f148c687799222821918ee~mv2.webp" alt="Movie Night Carbon">
+        </div>
+        <div class="card-body">
+          <div class="blog-meta">
+            <div class="blog-avatar">M</div>
+            <span>mansimn0123 · March 2025 · 2 min read</span>
+          </div>
+          <h3 class="card-title" style="text-transform:none;font-size:1.15rem;">Your Movie Night Has a Carbon Footprint!</h3>
+          <p class="card-excerpt">Last night you might have opened Netflix, picked a movie, and started streaming without thinking twice. But behind every stream sits a data centre humming at full capacity…</p>
+          <span class="card-link">Read More</span>
+        </div>
+      </div>
+
+      <!-- ── BLOG POST 02 — copy this block to add more posts ── -->
+      <!--
+      <div class="card reveal reveal-delay-2" onclick="goTo('blog-post.html#your-new-post-id')">
+        <div class="card-img-wrap">
+          <img class="card-img" src="images/your-blog-image.jpg" alt="Blog Post">
+        </div>
+        <div class="card-body">
+          <div class="blog-meta">
+            <div class="blog-avatar">M</div>
+            <span>mansimn0123 · April 2025 · 3 min read</span>
+          </div>
+          <h3 class="card-title" style="text-transform:none;font-size:1.15rem;">Your Blog Post Title Here</h3>
+          <p class="card-excerpt">Your excerpt here…</p>
+          <span class="card-link">Read More</span>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="newsletter-title">Let the posts come to you</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+    <input class="newsletter-input" type="email" placeholder="Email *" required />
+    <label class="newsletter-check"><input type="checkbox" required /> Yes, subscribe me to your newsletter.</label>
+    <button type="submit" class="btn-subscribe">Subscribe</button>
+  </form>
+  <!-- <nav class="footer-nav">
+    <a href="index.html">Home</a>
+    <a href="blog.html">My Blog</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="projects.html">Projects</a>
+  </nav> -->
+  <div class="social-row" style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);"></div>
+  <div class="footer-bottom" style="margin-top:20px;">© 2025 Mansi. All rights reserved.</div>
+</footer>
+
+<script src="js/social.js"></script>
+<script src="js/main.js"></script>
+<script>
+  function goTo(url) { window.location.href = url; }
+  document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(entries => entries.forEach(e => {
+      if(e.isIntersecting) e.target.classList.add('visible');
+    }), {threshold:0.1}).observe(el);
+  });
+</script>
+</body>
+</html>

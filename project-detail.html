@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail — Mansi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Each project is a full section; only the targeted one shows */
+    .project-section { display: none; }
+    .project-section.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">Mansi</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">My Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="menu-dropdown">
+  <a href="index.html">Home</a>
+  <a href="blog.html">My Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="projects.html">Projects</a>
+  <div class="menu-social-links"></div>
+</div>
+
+<main>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       HOW TO EDIT PROJECT DETAIL PAGES
+       ✏️  Each project is its own <section id="…"> block below.
+           Edit title, tools, mission, framework, impact directly.
+       🖼️  For the cover image: delete the .img-placeholder div and
+           uncomment the <img> line. Ideal size: 800 × 420 px.
+       ➕  To add a new project:
+           1. Copy a whole <section class="project-section" id="…"> block
+           2. Give it a new unique id (e.g. id="my-new-project")
+           3. Add a matching card on projects.html linking to
+              project-detail.html#my-new-project
+  ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- ── PROJECT 01: SUPPLY CHAIN ── -->
+  <section class="project-section content-section detail-hero" id="supply-chain">
+    <a href="projects.html" class="back-btn reveal">Back to Projects</a>
+    <span class="detail-tag reveal">Project 01</span><!-- ✏️ -->
+    <h1 class="detail-title reveal reveal-delay-1">The Carbon-Efficient Supply Chain (LCA+ROI)</h1><!-- ✏️ -->
+
+    <div class="detail-cover reveal reveal-delay-2">
+      <!-- <div class="img-placeholder detail-placeholder">
+        <span class="ph-icon">🏭</span><span class="ph-label">Project Cover Image</span><span class="ph-size">800 × 420 px recommended</span>
+      </div> -->
+      <img src="images\d9f0da_06bf89d3e441424a9abb2f8eb79ce995~mv2.jpeg" alt="Supply Chain">
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3>Technical Stack &amp; Competencies</h3>
+      <!-- ✏️ Edit tools, standards, domain -->
+      <div class="tag-label">Tools</div>
+      <div class="tag-row"><span class="tag">SimaPro</span><span class="tag">OpenLCA</span><span class="tag">Python</span><span class="tag">Excel</span></div>
+      <div class="tag-label">Standards</div>
+      <div class="tag-row"><span class="tag">ISO 14040</span><span class="tag">ISO 14044</span><span class="tag">GHG Protocol</span></div>
+      <div class="tag-label">Domain</div>
+      <div class="tag-row"><span class="tag">Industrial Manufacturing</span><span class="tag">Supply Chain</span><span class="tag">LCA</span></div>
+    </div>
+
+    <div class="detail-section reveal">
+      <h2>The Strategic Mission</h2>
+      <p>Sustainability is often viewed as a cost, but I proved it's a competitive advantage. By auditing the life cycle of industrial cooling components, I identified a design pivot that simultaneously cut raw material costs and carbon intensity—proving that the most 'green' path is often the most profitable.</p><!-- ✏️ -->
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Technical Framework</h2>
+      <p>Conducted a full cradle-to-gate LCA on copper tubing used in industrial HVAC cooling systems. Identified material hotspots and modeled alternative alloy configurations that reduced both embodied carbon and raw material spend.</p><!-- ✏️ -->
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Impact &amp; Recognition</h2>
+      <p>The redesigned specification reduced carbon intensity by 18% and material costs by 12%, demonstrating that sustainability and profitability are not trade-offs but design opportunities.</p><!-- ✏️ -->
+    </div>
+    <div style="margin-top:48px;" class="reveal"><a href="projects.html" class="btn-outline">← All Projects</a></div>
+  </section>
+
+  <!-- ── PROJECT 02: CARBON AUDITING ── -->
+  <section class="project-section content-section detail-hero" id="carbon-auditing">
+    <a href="projects.html" class="back-btn reveal">Back to Projects</a>
+    <span class="detail-tag reveal">Project 02</span>
+    <h1 class="detail-title reveal reveal-delay-1">Spatio-Temporal Carbon Auditing</h1>
+
+    <div class="detail-cover reveal reveal-delay-2">
+      <div class="img-placeholder detail-placeholder">
+        <span class="ph-icon">🛰️</span><span class="ph-label">Project Cover Image</span><span class="ph-size">800 × 420 px recommended</span>
+      </div>
+      <!-- <img src="images/project-02.jpg" alt="Carbon Auditing"> -->
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3>Technical Stack &amp; Competencies</h3>
+      <div class="tag-label">Tools</div>
+      <div class="tag-row"><span class="tag">Google Earth Engine</span><span class="tag">Python</span><span class="tag">QGIS</span><span class="tag">R</span></div>
+      <div class="tag-label">Standards</div>
+      <div class="tag-row"><span class="tag">Verra VCS</span><span class="tag">Gold Standard</span></div>
+      <div class="tag-label">Domain</div>
+      <div class="tag-row"><span class="tag">Remote Sensing</span><span class="tag">Carbon Credits</span><span class="tag">Ecosystem Analysis</span></div>
+    </div>
+
+    <div class="detail-section reveal">
+      <h2>The Strategic Mission</h2>
+      <p>You cannot manage what you do not measure. In the world of Carbon Credits, verification is the only currency that matters. I utilized two decades of satellite intelligence to transform abstract ecological shifts into a concrete, high-integrity carbon sequestration audit—bridging the gap between raw pixels and planetary value.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Technical Framework</h2>
+      <p>Applied time-series NDVI analysis and mangrove canopy classification across 20 years of Landsat imagery to quantify biomass change and carbon stock evolution. Validated against ground-truth ecological data from the Sundarbans.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Impact &amp; Recognition</h2>
+      <p>Produced a reproducible carbon audit methodology now being considered for integration into regional carbon credit verification frameworks.</p>
+    </div>
+    <div style="margin-top:48px;" class="reveal"><a href="projects.html" class="btn-outline">← All Projects</a></div>
+  </section>
+
+  <!-- ── PROJECT 03: GREEN HYDROGEN ── -->
+  <section class="project-section content-section detail-hero" id="green-hydrogen">
+    <a href="projects.html" class="back-btn reveal">Back to Projects</a>
+    <span class="detail-tag reveal">Project 03</span>
+    <h1 class="detail-title reveal reveal-delay-1">Cryogenic Precision: Green Hydrogen (Simulation)</h1>
+
+    <div class="detail-cover reveal reveal-delay-2">
+      <div class="img-placeholder detail-placeholder">
+        <span class="ph-icon">⚗️</span><span class="ph-label">Project Cover Image</span><span class="ph-size">800 × 420 px recommended</span>
+      </div>
+      <!-- <img src="images/project-03.jpg" alt="Green Hydrogen"> -->
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3>Technical Stack &amp; Competencies</h3>
+      <div class="tag-label">Tools</div>
+      <div class="tag-row"><span class="tag">Aspen HYSYS</span><span class="tag">Python</span><span class="tag">MATLAB</span></div>
+      <div class="tag-label">Standards</div>
+      <div class="tag-row"><span class="tag">IEA Hydrogen Roadmap</span><span class="tag">EU Green Hydrogen Standards</span></div>
+      <div class="tag-label">Domain</div>
+      <div class="tag-row"><span class="tag">Process Engineering</span><span class="tag">Green Hydrogen</span><span class="tag">Energy Systems</span></div>
+    </div>
+
+    <div class="detail-section reveal">
+      <h2>The Strategic Mission</h2>
+      <p>In the race to a net-zero future, energy efficiency is the primary driver of commercial viability. I utilize high-fidelity process simulations to identify thermodynamic bottlenecks in cryogenic systems—transforming complex chemical engineering data into the technical foundation for a profitable and scalable green hydrogen supply chain.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Technical Framework</h2>
+      <p>Built high-fidelity process models in Aspen HYSYS to simulate cryogenic hydrogen liquefaction pathways. Conducted parametric sensitivity analysis to identify efficiency improvement opportunities across compression, heat exchange, and storage stages.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Impact &amp; Recognition</h2>
+      <p>Identified a 14% efficiency improvement opportunity in the compression stage, providing a clear pathway for cost reduction in green hydrogen production at commercial scale.</p>
+    </div>
+    <div style="margin-top:48px;" class="reveal"><a href="projects.html" class="btn-outline">← All Projects</a></div>
+  </section>
+
+  <!-- ── PROJECT 04: RADIATIVE COOLING ── -->
+  <section class="project-section content-section detail-hero" id="radiative-cooling">
+    <a href="projects.html" class="back-btn reveal">Back to Projects</a>
+    <span class="detail-tag reveal">Project 04</span>
+    <h1 class="detail-title reveal reveal-delay-1">Passive Radiative Cooling: Thermal Infrastructure</h1>
+
+    <div class="detail-cover reveal reveal-delay-2">
+      <div class="img-placeholder detail-placeholder">
+        <span class="ph-icon">🌡️</span><span class="ph-label">Project Cover Image</span><span class="ph-size">800 × 420 px recommended</span>
+      </div>
+      <!-- <img src="images/project-04.jpg" alt="Radiative Cooling"> -->
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3>Technical Stack &amp; Competencies</h3>
+      <div class="tag-label">Tools</div>
+      <div class="tag-row"><span class="tag">Python</span><span class="tag">Statistical Modeling</span><span class="tag">Experimental Instrumentation</span></div>
+      <div class="tag-label">Standards</div>
+      <div class="tag-row"><span class="tag">ASHRAE</span><span class="tag">Energy Performance Standards</span></div>
+      <div class="tag-label">Domain</div>
+      <div class="tag-row"><span class="tag">Materials Science</span><span class="tag">Building Energy</span><span class="tag">Climate Adaptation</span></div>
+    </div>
+
+    <div class="detail-section reveal">
+      <h2>The Strategic Mission</h2>
+      <p>True sustainability requires rethinking the laws of cooling. I spearheaded the experimental investigation and technical validation of a passive radiative cooling system—transforming a zero-electricity cooling concept into a patented intellectual asset backed by an MIT Solve [ED] exploratory grant.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Technical Framework</h2>
+      <p>Designed and executed controlled outdoor experiments to measure sub-ambient cooling performance of spectrally-selective radiative cooling materials. Built statistical models to predict performance under varying climate conditions across seasons.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Impact &amp; Recognition</h2>
+      <p>Demonstrated 7–11°C surface temperature reduction without electricity. Work is supported by an MIT Solve exploratory grant and is currently in the patent pipeline.</p>
+    </div>
+    <div style="margin-top:48px;" class="reveal"><a href="projects.html" class="btn-outline">← All Projects</a></div>
+  </section>
+
+  <!-- ── PROJECT 05: HEAT MODELING ── -->
+  <section class="project-section content-section detail-hero" id="heat-modeling">
+    <a href="projects.html" class="back-btn reveal">Back to Projects</a>
+    <span class="detail-tag reveal">Project 05</span>
+    <h1 class="detail-title reveal reveal-delay-1">Climate Risk Intelligence: Predictive Heat Modeling</h1>
+
+    <div class="detail-cover reveal reveal-delay-2">
+      <div class="img-placeholder detail-placeholder">
+        <span class="ph-icon">🌍</span><span class="ph-label">Project Cover Image</span><span class="ph-size">800 × 420 px recommended</span>
+      </div>
+      <!-- <img src="images/project-05.jpg" alt="Heat Modeling"> -->
+    </div>
+
+    <div class="tech-stack reveal">
+      <h3>Technical Stack &amp; Competencies</h3>
+      <div class="tag-label">Tools</div>
+      <div class="tag-row"><span class="tag">Python (Statistical Modeling)</span><span class="tag">Climate Modeling &amp; Downscaling</span></div>
+      <div class="tag-label">Standards</div>
+      <div class="tag-row"><span class="tag">IMD Heatwave Protocol</span></div>
+      <div class="tag-label">Domain</div>
+      <div class="tag-row"><span class="tag">Physical Climate Risk</span><span class="tag">Public Health Policy</span><span class="tag">ESG Consulting</span></div>
+    </div>
+
+    <div class="detail-section reveal">
+      <h2>The Strategic Mission</h2>
+      <p>Climate change is the ultimate financial and systemic tail-risk. I collaborated with researchers from the University of Pennsylvania and Tsinghua University to transform raw meteorological data into predictive early-warning systems—proving that technical intelligence is the first line of defense in protecting urban infrastructure and human capital.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Technical Framework</h2>
+      <p>Built classification models aligned with IMD Heatwave Protocol standards to facilitate heat-wave risk assessment. Evaluated the implementation effects of Heat Action Plans, specifically focusing on maternal health outcomes in India. Partnered with international experts to ensure scientific rigor.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="detail-section reveal">
+      <h2>The Impact &amp; Recognition</h2>
+      <p>Manuscript currently under review with The Lancet Regional Health – Southeast Asia. Work provides the physical risk data required for TCFD-aligned ESG reporting frameworks.</p>
+    </div>
+    <div style="margin-top:48px;" class="reveal"><a href="projects.html" class="btn-outline">← All Projects</a></div>
+  </section>
+
+  <!-- Fallback if no hash matched -->
+  <section class="project-section content-section detail-hero" id="not-found">
+    <a href="projects.html" class="back-btn">Back to Projects</a>
+    <p style="color:var(--text-muted); margin-top:24px;">Project not found. <a href="projects.html" style="color:var(--forest);">Return to all projects →</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p class="newsletter-title">Let the posts come to you</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+    <input class="newsletter-input" type="email" placeholder="Email *" required />
+    <label class="newsletter-check"><input type="checkbox" required /> Yes, subscribe me to your newsletter.</label>
+    <button type="submit" class="btn-subscribe">Subscribe</button>
+  </form>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a><a href="blog.html">My Blog</a><a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a><a href="projects.html">Projects</a>
+  </nav>
+  <div class="social-row" style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);"></div>
+  <div class="footer-bottom" style="margin-top:20px;">© 2025 Mansi. All rights reserved.</div>
+</footer>
+
+<script src="js/social.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Show only the section matching the URL hash
+  const hash = window.location.hash.replace('#', '') || 'not-found';
+  const target = document.getElementById(hash);
+  if (target && target.classList.contains('project-section')) {
+    target.classList.add('active');
+    document.title = target.querySelector('h1')?.textContent + ' — Mansi';
+  } else {
+    document.getElementById('not-found').classList.add('active');
+  }
+
+  // Scroll reveal
+  document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1}).observe(el);
+  });
+  // Trigger first-visible reveal immediately
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) el.classList.add('visible');
+    });
+  }, 100);
+</script>
+</body>
+</html>

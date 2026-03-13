@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Mansi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">Mansi</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">My Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="menu-dropdown">
+  <a href="index.html">Home</a>
+  <a href="blog.html">My Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="projects.html">Projects</a>
+  <div class="menu-social-links"></div>
+</div>
+
+<main>
+  <section class="content-section about-hero">
+
+    <div class="text-center" style="margin-bottom:48px;">
+      <div class="section-label reveal">Who I am</div>
+      <h1 class="section-title reveal reveal-delay-1">About me</h1><!-- ✏️ -->
+    </div>
+
+    <!-- ═══ YOUR PHOTO ═══════════════════════════════════════════
+         🖼️  Put your photo in images/about-photo.jpg (or any name).
+             Delete the placeholder div and uncomment the <img> line.
+             Ideal size: 800 × 600 px or taller portrait.
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="about-photo-wrap reveal">
+      <!-- <div class="img-placeholder about-placeholder">
+        <span class="ph-icon">📷</span>
+        <span class="ph-label">Your About Photo Here</span>
+        <span class="ph-size">Place file in images/ — recommended 800 × 600 px</span>
+      </div> -->
+      <!-- Uncomment once you have your photo: -->
+      <img src="images\About.jpeg" alt="Mansi" />
+    </div>
+
+    <!-- ═══ BIO TEXT ══════════════════════════════════════════════
+         ✏️  Edit each paragraph directly. Add or remove <p> tags freely.
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="about-text">
+
+      <p class="reveal">
+        I am Mansi, a sustainability professional working in the areas of carbon accounting, GHG emissions analysis, life cycle assessment, and energy systems. My work focuses on understanding how industries, technologies, and ecosystems interact with the climate and how data-driven insights can support effective decarbonization strategies.
+      </p>
+
+      <p class="reveal">
+        I specialize in quantifying environmental impacts across systems, using approaches such as life cycle assessment (LCA), greenhouse gas accounting, and environmental data analysis. These tools help identify where emissions occur and reveal opportunities to improve resource efficiency and reduce carbon intensity.
+      </p>
+
+      <p class="reveal">
+        One of my key projects involved conducting a life cycle assessment of copper tubing used in HVAC systems, where I analyzed the environmental implications of material choices and manufacturing processes. The study demonstrated how small design optimizations can reduce material usage and carbon footprint, highlighting the role of sustainability in improving both environmental and operational performance.
+      </p>
+
+      <p class="reveal">
+        My work has also explored passive cooling technologies, including radiative cooling materials capable of reducing surface temperatures by 7–11°C, which shows potential for reducing energy demand in buildings.
+      </p>
+
+      <p class="reveal">
+        In addition to engineered systems, I have studied natural carbon systems through spatio-temporal analysis of mangrove ecosystems in the Sundarbans, examining long-term vegetation dynamics and their role in carbon sequestration and ecosystem resilience.
+      </p>
+
+      <p class="reveal">
+        Through these experiences, I aim to develop deeper expertise in carbon accounting, energy systems, and climate strategy, with the goal of contributing to practical pathways for decarbonisation across industries and ecosystems.
+      </p>
+
+      <!-- ➕ Add more paragraphs by copying: <p class="reveal">Your text.</p> -->
+
+    </div>
+
+    <!-- Social links on About page -->
+    <div class="social-row reveal" style="justify-content:center; margin-top:48px;"></div>
+
+  </section>
+</main>
+
+<footer>
+  <p class="newsletter-title">Let the posts come to you</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+    <input class="newsletter-input" type="email" placeholder="Email *" required />
+    <label class="newsletter-check"><input type="checkbox" required /> Yes, subscribe me to your newsletter.</label>
+    <button type="submit" class="btn-subscribe">Subscribe</button>
+  </form>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a><a href="blog.html">My Blog</a><a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a><a href="projects.html">Projects</a>
+  </nav>
+  <div class="social-row" style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);"></div>
+  <div class="footer-bottom" style="margin-top:20px;">© 2025 Mansi. All rights reserved.</div>
+</footer>
+
+<script src="js/social.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1}).observe(el);
+  });
+</script>
+</body>
+</html>

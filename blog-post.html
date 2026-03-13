@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Post — Mansi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .post-section { display: none; }
+    .post-section.active { display: block; }
+    .post-hero-img { width:100%; height:280px; object-fit:cover; border-radius:16px; margin-bottom:32px; box-shadow:0 12px 40px rgba(0,0,0,0.12); }
+    .post-hero-ph { width:100%; height:280px; border-radius:16px; margin-bottom:32px; }
+    .post-title { font-family:var(--font-display); font-size:clamp(1.8rem,5vw,2.6rem); font-weight:500; line-height:1.2; margin-bottom:20px; }
+    .post-meta { display:flex; align-items:center; gap:10px; font-size:.85rem; color:var(--text-light); margin-bottom:40px; padding-bottom:24px; border-bottom:1px solid var(--border); }
+    .post-avatar { width:36px; height:36px; border-radius:50%; background:var(--accent); color:white; display:flex; align-items:center; justify-content:center; font-weight:600; }
+    .post-content p { color:var(--text-muted); line-height:1.8; margin-bottom:24px; font-size:1.05rem; }
+    .post-content h2 { font-family:var(--font-display); font-size:1.4rem; margin:36px 0 12px; }
+    .post-content blockquote { border-left:3px solid var(--accent); padding-left:20px; margin:28px 0; font-family:var(--font-display); font-style:italic; font-size:1.1rem; color:var(--text-main); }
+  </style>
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<nav>
+  <div class="nav-logo"><a href="index.html">Mansi</a></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">My Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="menu-dropdown">
+  <a href="index.html">Home</a>
+  <a href="blog.html">My Blog</a>
+  <a href="about.html">About</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="projects.html">Projects</a>
+  <div class="menu-social-links"></div>
+</div>
+
+<main>
+  <section class="content-section pt-nav" style="max-width:760px; margin:0 auto;">
+
+    <!-- ══════════════════════════════════════════════════════════════
+         HOW TO EDIT BLOG POSTS
+         ✏️  Each post is inside a <div class="post-section" id="…">.
+             Edit the title, date, and <p> paragraphs directly.
+         🖼️  For the hero image: delete the .img-placeholder div
+             and uncomment the <img class="post-hero-img" …> line.
+         ➕  To add a new post:
+             1. Copy any post-section block below
+             2. Give it a new unique id="" (e.g. id="my-new-post")
+             3. Add a matching card in blog.html linking to
+                blog-post.html#my-new-post
+         📝  Use <p>, <h2>, <blockquote> tags inside .post-content.
+    ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- ── POST 01: MOVIE NIGHT ── -->
+    <div class="post-section" id="movie-night">
+      <a href="blog.html" class="back-btn reveal">Back to Blog</a>
+
+      <!-- 🖼️ Hero image — replace placeholder once you have image -->
+      <!-- <div class="img-placeholder post-hero-ph reveal">
+        <span class="ph-icon">💡</span><span class="ph-label">Blog Cover Image</span><span class="ph-size">800 × 500 px recommended</span>
+      </div> -->
+      <img class="post-hero-img reveal" src="images/d9f0da_23cda2c2a0f148c687799222821918ee~mv2.webp" alt="Movie Night">
+
+      <div class="post-meta reveal">
+        <div class="post-avatar">M</div>
+        <div>
+          <div><strong>mansimn0123</strong></div>
+          <div>March 2025 · 2 min read</div><!-- ✏️ date + read time -->
+        </div>
+      </div>
+
+      <!-- ✏️ Post title -->
+      <h1 class="post-title reveal">Your Movie Night Has a Carbon Footprint!</h1>
+
+      <!-- ✏️ Post body — write in <p> tags, add <h2> for subheadings, <blockquote> for pull quotes -->
+      <div class="post-content reveal">
+        <p>Last night you might have opened Netflix, picked a movie, and started streaming without thinking twice. It feels simple, right? But behind every stream sits a data centre humming at full capacity, drawing enormous amounts of electricity, most of it still fossil-fuel powered.</p>
+
+        <p>Streaming one hour of HD video generates roughly 36 grams of CO₂ equivalent — similar to boiling a kettle three times. Multiply that by the 700 million hours streamed globally every day, and we're looking at a substantial and growing source of emissions.</p>
+
+        <blockquote>The most sustainable action is the one you take without thinking about it.</blockquote>
+
+        <p>The good news? The streaming industry is rapidly shifting to renewable energy. Companies like Google and Microsoft have made ambitious pledges. But infrastructure takes time, and in the interim, every watt matters.</p>
+
+        <h2>What can you do?</h2>
+
+        <p>Download content over Wi-Fi instead of streaming on mobile data — mobile networks are far less energy efficient. Choose standard definition when HD isn't necessary. And consider the embodied carbon of the devices you watch on — a new TV purchased every 5 years vs. 10 years makes a significant difference.</p>
+
+        <p>Sustainability isn't just about the big decisions — it's in the texture of everyday life. Every stream, every search, every scroll has a physical footprint. Awareness is the first step.</p>
+      </div>
+
+      <div style="margin-top:48px;" class="reveal"><a href="blog.html" class="btn-outline">← All Posts</a></div>
+    </div>
+
+    <!-- ── POST 02 — copy this block for new posts ──
+    <div class="post-section" id="your-new-post-id">
+      <a href="blog.html" class="back-btn reveal">Back to Blog</a>
+      <div class="img-placeholder post-hero-ph reveal">
+        <span class="ph-icon">✏️</span><span class="ph-label">Blog Cover Image</span><span class="ph-size">800 × 500 px</span>
+      </div>
+      <div class="post-meta reveal">
+        <div class="post-avatar">M</div>
+        <div><div><strong>mansimn0123</strong></div><div>April 2025 · 3 min read</div></div>
+      </div>
+      <h1 class="post-title reveal">Your Blog Post Title Here</h1>
+      <div class="post-content reveal">
+        <p>Your first paragraph here.</p>
+        <p>Your second paragraph here.</p>
+      </div>
+      <div style="margin-top:48px;" class="reveal"><a href="blog.html" class="btn-outline">← All Posts</a></div>
+    </div>
+    -->
+
+    <!-- Fallback -->
+    <div class="post-section" id="not-found">
+      <a href="blog.html" class="back-btn">Back to Blog</a>
+      <p style="color:var(--text-muted);margin-top:24px;">Post not found. <a href="blog.html" style="color:var(--forest);">Return to blog →</a></p>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p class="newsletter-title">Let the posts come to you</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+    <input class="newsletter-input" type="email" placeholder="Email *" required />
+    <label class="newsletter-check"><input type="checkbox" required /> Yes, subscribe me to your newsletter.</label>
+    <button type="submit" class="btn-subscribe">Subscribe</button>
+  </form>
+  <nav class="footer-nav">
+    <a href="index.html">Home</a><a href="blog.html">My Blog</a><a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a><a href="projects.html">Projects</a>
+  </nav>
+  <div class="social-row" style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);"></div>
+  <div class="footer-bottom" style="margin-top:20px;">© 2025 Mansi. All rights reserved.</div>
+</footer>
+
+<script src="js/social.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Show the post matching the URL hash
+  const hash = window.location.hash.replace('#', '') || 'not-found';
+  const target = document.getElementById(hash);
+  if (target && target.classList.contains('post-section')) {
+    target.classList.add('active');
+    const title = target.querySelector('h1')?.textContent;
+    if (title) document.title = title + ' — Mansi';
+  } else {
+    document.getElementById('not-found').classList.add('active');
+  }
+
+  // Scroll reveal
+  document.querySelectorAll('.reveal').forEach(el => {
+    new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.08}).observe(el);
+  });
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible');
+    });
+  }, 100);
+</script>
+</body>
+</html>
