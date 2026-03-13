@@ -1,9 +1,9 @@
 // ── SHARED SOCIAL LINKS (update URLs here, they apply everywhere) ──
 const SOCIAL = {
-  instagram:   "https://instagram.com/mansimn0123",       // ← your Instagram URL
-  linkedin:    "https://linkedin.com/in/yourprofile",     // ← your LinkedIn URL
+  instagram:   "https://www.instagram.com/mmansi.ii/",       // ← your Instagram URL
+  linkedin:    "www.linkedin.com/in/mansi-849366252",     // ← your LinkedIn URL
   researchgate:"https://researchgate.net/profile/yourprofile", // ← your ResearchGate URL
-  email:       "mailto:your@email.com",                   // ← your email
+  email:       "mailto:mansi.mn0123@gmail.com",                   // ← your email
 };
 
 // SVG icons
